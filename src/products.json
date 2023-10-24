@@ -1,0 +1,47 @@
+[
+	{
+		"id": 1,
+		"title": "Crema",
+		"description": "ptroteccion del tattoo",
+		"price": 2000,
+		"thumbnail": "[]",
+		"code": "abc123",
+		"stock": 100
+	},
+	{
+		"id": 2,
+		"title": "jabon",
+		"description": "ptroteccion del tattoo",
+		"price": 2500,
+		"thumbnail": "[]",
+		"code": "abc111",
+		"stock": 60
+	},
+	{
+		"id": 3,
+		"title": "dermofil",
+		"description": "ptroteccion del tattoo",
+		"price": 2000,
+		"thumbnail": "[]",
+		"code": "abc222",
+		"stock": 500
+	},
+	{
+		"id": 4,
+		"title": "Anestesia",
+		"description": "Proceso del Tatuaje",
+		"price": 8000,
+		"thumbnail": "[]",
+		"code": "abc456",
+		"stock": 100
+	},
+	{
+		"id": 5,
+		"title": "vaselina",
+		"description": "Proceso del Tatuaje",
+		"price": 3000,
+		"thumbnail": "[]",
+		"code": "abc789",
+		"stock": 10
+	}
+]
