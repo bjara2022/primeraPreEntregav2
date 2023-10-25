@@ -11,8 +11,6 @@ cartRouter.get('/', async (req, res) => {
 	}
 });
 
-
-
 cartRouter.get('/:cid', async (req, res) => {
 	try {
 		let { cid } = req.params;
@@ -25,16 +23,15 @@ cartRouter.get('/:cid', async (req, res) => {
 			return res.send({ error: 'Carrito no encontrado' });
 		}
 	} catch (e) {
-        console.log("No se pudo agregar el producto", e)
+		console.log('No se pudo agregar el producto', e);
 	}
-    return;
-
+	return;
 });
 
 cartRouter.post('/', async (req, res) => {
 	try {
 		let newCart = req.body;
-		return res.send(await cartManager.addProductToCart(newCart));
+		return res.send(await cartManager.addToCart(newCart));
 	} catch (error) {
 		return res.send(`Error interno del servidor: ${error}`);
 	}
@@ -52,6 +49,5 @@ cartRouter.post('/:cid/product/:pid', async (req, res) => {
 		return res.send(`Error interno del servidor: ${error}`);
 	}
 });
-
 
 export { cartRouter };
